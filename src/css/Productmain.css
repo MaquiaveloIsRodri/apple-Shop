@@ -1,0 +1,66 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container-tags{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 15px;
+}
+.image-tag{
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+.tittle-tag{
+    font-size: 27px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.descripcion-tag{
+    font-size: 16px;
+    width:  80%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    color: #8a8888;
+}
+.button-tag{
+    margin-bottom: 30px;
+    width:60px;
+    height: 40px;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+.shppp-cart-tag{
+    background-image: url('../assets/img/ShoppCard.png');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:20px;
+    height: 20px;
+    margin: 0 auto;
+}
+.precio-tag{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #e46471;
+}

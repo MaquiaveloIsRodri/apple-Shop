@@ -1,0 +1,42 @@
+.navbar-inverse{
+    background-color: #8a8888;
+}
+.Icono{
+    margin-left: 30px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url("../assets/img/Apple.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #a3a1a1;
+    cursor: default;
+}
+.Tittles{
+    flex-direction: row;
+}
+.active{
+    margin-right: 40px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.home{
+    margin-left: 30px;
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+    background-image: url("../assets/img/IconHome.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.home:hover{
+    height: 20px;
+    width: 20px;
+
+}
