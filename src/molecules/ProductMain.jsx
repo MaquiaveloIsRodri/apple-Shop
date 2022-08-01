@@ -2,7 +2,7 @@ import React from "react";
 import productos from '../API/index'
 import '../css/Productmain.css'
 
-const producto= await productos();
+const producto = productos();
 const Productmain = (props) => {
 
     return (
