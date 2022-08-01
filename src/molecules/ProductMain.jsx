@@ -1,14 +1,22 @@
 import React from "react";
-import productos from '../API/index'
+import Producto from '../API/index'
 import '../css/Productmain.css'
+import { useState , useEffect} from "react";
 
-const producto = await productos();
+
 const Productmain = (props) => {
-
+    const [productos, setProductos] = useState([]);
+    useEffect(() => {
+        const ProductosAsync = async () => {
+            const productos = await Producto();
+            setProductos(productos);
+        }
+        ProductosAsync();
+    }, [])
     return (
         <div className="container">
             {
-                producto.map(produc => {
+                productos.map(produc => {
                     return (
                         <div className="container-tags" key={produc.id}>
                             <h1 className="tittle-tag">{produc.nombre}</h1>
@@ -26,10 +34,16 @@ const Productmain = (props) => {
                                 <span className="shppp-cart-tag"></span>
                             </button>
                         </div>
-                    )
-                })
-            }
+                    )})}
         </div>
         )
     } 
 export default Productmain;
+
+/*producto().then (data => {
+    )
+}).catch(err => {
+    console.log(err)
+}
+)
+*/

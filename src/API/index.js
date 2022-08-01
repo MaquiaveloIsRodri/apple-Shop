@@ -1,7 +1,7 @@
-const productos = async ()=>{
+async function Producto(){
     const productos = await fetch('https://shopp-apple-express.herokuapp.com/api/Productos');
     const productosJson = productos.json();
     return productosJson;
 }
-productos();
-export default productos;
+
+export default Producto;
